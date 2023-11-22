@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Socord</title>
+</head>
+<body>
+    <div id="main">
+        <div id="sidever">
+            <div id="headers">
+                <div id="h-title">Socord</div>
+            </div>
+            <div id="online-users">
+                <div id="usersti">オンラインメンバー</div>
+                <ul></ul>
+            </div>
+            <div id="channel-bar">
+                <!-- チャンネル一覧やその他の要素をここに配置 -->
+            </div>
+        </div>
+        <div id="mas">
+            <div id="header">
+                <div id="h-title">雑談</div>
+                <div id="h-ex">雑談をするチャンネルです。</div>
+            </div>
+            <div id="content">
+                <!-- メッセージの表示エリア -->
+            </div>
+            <div id="message-bar">
+                <div id="pasted-image-container" style="display: none;"></div>
+                <textarea id="message-text" placeholder="素敵なメッセージを書き込む"></textarea>
+                <button id="send-button">
+                    <img src="images/send.png" alt="Send">
+                </button>
+                <input type="file" id="file-input" style="display: none;">
+              <button id="open-file-button">Open Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
