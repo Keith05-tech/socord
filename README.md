@@ -1,0 +1,2 @@
+# socord
+Socordを楽しもう
