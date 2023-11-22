@@ -1,0 +1,259 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  height:100%;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Channel Bar Styles */
+#channel-bar {
+    flex: 1;
+    background-color: #36393f;
+    color: #fff;
+    padding: 20px;
+  width:250px;
+}
+
+/* Content Styles */
+#content {
+    flex: 4;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #44434c;
+  width:1266.02px;
+  height:630px;
+  overflow:scroll;
+  margin-top:50px;
+}
+
+/* Online Users Bar Styles */
+#user-bar {
+    flex: 1;
+    background-color: #36393f;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+  width:250px;
+}
+
+/* Messages Styles */
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease; /* メッセージ表示時のフェードインアニメーション */
+}
+
+.user-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* Message Input Styles */
+#message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* 下に影をつける */
+    position: fixed; /* 画面下部に固定するために固定位置に設定 */
+    bottom: 0; /* 画面下部に固定 */
+    width:100%;
+}
+
+#message-text {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 14px;
+    outline:none;
+  width:82%;
+    border-radius: 5px;
+    resize: none;
+  margin:10px;
+  height:45px;
+  color:white;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 80%);
+  background-color:#7c7e88ee;
+}
+
+#send-button {
+    background-color: #c800ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* ボタンの背景色変化のアニメーション */
+}
+
+#send-button:hover {
+    background-color: #c0d5ec; /* マウスオーバー時の背景色 */
+}
+
+/* Message Input Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main{
+  display:flex;
+  width:100%;
+  height:100%;
+}
+
+#sidever{
+  height:100vh;
+  background-color: #36393f;
+  z-index:100000;
+}
+#message-bar{
+  position:fixed;
+  bottom:0;
+  background-color: #44434c;
+  width:100%;
+  justify-content: center;
+  height:65px;
+}
+/* その他のスタイル */
+/* ... */
+#header{
+  width:100%;
+  height:50px;
+  position:fixed;
+  background-color:#3b3a40;
+  border-bottom:solid 2px black;
+  display:flex;
+}
+
+  /* スタイルの追加 */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* 他のスタイル */
+/* 名前を太字にするスタイル */
+.user-name {
+    font-weight: bold;
+  color:#94ff96ee;
+}
+
+/* メッセージ表示スタイル */
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.message-content {
+    margin-top: 5px;
+}
+
+/* 他のスタイル */
+
+/* メッセージ表示スタイル */
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.user-info-container {
+    display: flex; /* アイコンと名前を同じ列に配置するための flex */
+    align-items: center; /* 垂直方向の中央揃え */
+    gap: 10px; /* アイコンと名前の間隔 */
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.message-content {
+    margin-top: 5px;
+  color:white;
+}
+.message-text{
+  color:white;
+}
+/* 他のスタイル */
+#headers{
+  width:250px;
+  background-color:#36393f;
+  border-bottom:solid 2px black;
+  height:50px;
+}
+#h-title{
+  font-size:17px;
+  font-weight:bold;
+  color:white;
+  padding:12px;
+}
+#h-ex{
+  font-size:14px;
+  color:#9c9c9c;
+  padding:13px;
+}
+#usersti{
+font-size:14px;
+  font-weight:bold;
+  margin-bottom:12px;
+  color:#737373;
+}
+#online-users{
+  margin:10px;
+}
+#online-users ul li{
+  color:#94ff96ee;
+  margin-bottom:5px;
+}
